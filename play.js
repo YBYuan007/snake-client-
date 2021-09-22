@@ -7,12 +7,16 @@ const connect = function (){   // create a variable: connect
     console.log("yes mann")); 
     conn.setEncoding("utf8"); 
 
+    conn.on("connect" , ()=>{
+      conn.write("Name: YBY"); 
+      console.log("Successfully connected to game server ..yadayada");
+    })
     conn.on("data", (data) => {
       // code that does something when the connection is first established
       console.log(data)
     });
 
-  
+    
 
     // console.log("yes mann2");
     return conn; 
