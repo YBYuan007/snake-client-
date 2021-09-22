@@ -22,3 +22,5 @@ const connect = function (){   // create a variable: connect
 
 // console.log("YB connecting .... ") ; 
 connect();
+
+module.exports = connect ; 
